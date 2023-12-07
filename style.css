@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    height: 100vh;
+}
+
+.head
+{
+    width: 100%;
+    height: auto;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    top:0px;
+    background-color: #ccc;
+    color: #dc3545;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#todo-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+    transition: transform 0.2s;
+ 
+}
+
+#todo-container .main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+#todo-container .main .clickable
+{
+    width: 50%;
+}
+
+
+#todo-container .main .result
+{
+    width: 50%;
+    height: auto;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+  }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    /* outline: none; */
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+
+button#add
+{
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+
+}
+button.completed {
+    background-color: #28a745;
+}
+
+#clearAll {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    /* -webkit-transition: 0.5s;
+    transition: 0.5s; */
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+#clearAll:hover {
+    background-color: #0056b3;
+}
+
+button#add:hover,button#clearAll:hover {
+    border-radius: 0px;
+    border: 3px solid black;
+  }
+
+
+ footer {
+    background: #1A1E25;
+    color: #868c96;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    padding: 40px 0;
+    text-align: center;
+}
